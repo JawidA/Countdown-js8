@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video class="video-background" src="Vidoe/countdown.mp4" loop muted autoplay>
+        <!-- <source src="Vidoe/countdown.mp4"> -->
+    </video>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Contaner -->
+    <div class="contaner">
+        <!-- Input Form -->
+        <div class="input-contaner">
+            <h1 class="form-title">Create a Countdown</h1>
+            <form class="input-form">
+                <label for="countdown-title" class="input-countdown-title">Title</label>
+                <input type="text" id="countdown-title" placeholder="Enter your countdown title"><br>
+                <label for="countdown-date class="countdown-date">Date</label>
+                <input type="date" class="date-input">                
+                <input type="submit" class="submit">
+            </form>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown" hidden>
+            <h1 class="countdown-title">Countdown title</h1>
+            <div class="time">
+                <ul>
+                    <li><span>0</span>Days</li>
+                    <li><span>0</span>Hours</li>
+                    <li><span>0</span>Minutes</li>
+                    <li><span>0</span>Seconds</li>
+                </ul>
+            </div>
+            <input type="submit" class="reset" value="Reset">
+        </div>
+
+        <!-- Completed -->
+        <div class="complete" hidden>
+            <h1 class="completed-titel">Countdown Complete!</h1>
+            <h2 class="countdown-info">Countdown Finished on 04-07-2023</h2>
+            <input type="submit" class="new-countdown" value="New Countdown">
+        </div>
+
+
+
+    </div>
+
+
+</body>
+</html>

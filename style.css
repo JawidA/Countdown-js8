@@ -1,0 +1,156 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* color:white; */
+}
+
+/* Video background Style */
+.video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Overlay Style */
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Contaner Style */
+.contaner {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    max-width: 96%;
+    width: 660px;
+    min-height: 150px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 40px 5% ;
+}
+
+/* input-contaner */
+.input-contaner {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.form-title, .countdown-title {
+    font-size: 2.5rem;
+}
+
+.input-contaner form label {
+    display: block;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.input-contaner .input-form {
+    width: 100%;
+}
+
+.input-contaner .input-form input, .reset, .new-countdown{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+
+.input-contaner .input-form .submit, .reset, .new-countdown {
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Countdown */
+.time {
+    margin: 20px 0;
+}
+
+.time ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.time ul li span {
+    display: block;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: -15px;
+}
+
+/* Completed */
+.complete {
+    text-align: center;
+}
+
+.complete .completed-titel {
+    animation: complete 4s infinite;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+@keyframes complete {
+    0% {
+        color: red;
+        transform: scale(1);
+    }
+    25% {
+        color: rgb(154, 67, 235);
+        /* transform: scale(1.2); */
+    }
+    50% {
+        color: rgb(167, 167, 32);
+        transform: scale(1.5);
+    }
+    75% {
+        color: rgb(196, 12, 196);
+        /* transform: scale(1.2); */
+
+    }
+    100% {
+        color: rgb(39, 197, 39);
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .video-background {
+        object-position: 20%;
+    }
+}
